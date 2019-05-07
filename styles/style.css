@@ -1,0 +1,968 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    width: 1920px;
+    margin: 0 auto;
+    font-family: 'Lato'
+}
+
+/* Section one start */
+
+section.component1 {
+    width: 100%;
+    background-color: #222533;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 461px;
+    padding-bottom: 494px;
+}
+
+section.component1 header h3 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: normal;
+    letter-spacing: 9px;
+    margin-left: 13px;
+    margin-bottom: 3px;
+}
+
+section.component1 header h1 {
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+section.component1 header p {
+    font-size:30px;
+    line-height: 36px;
+    font-weight: 300;
+    margin-bottom: 41px;
+}
+
+a {
+    text-decoration: none;
+    color: #1ABC9C;
+}
+
+section.component1 header a.click {
+    padding: 18px 27px;
+    color: #FFFFFF;
+    border: #FFFFFF solid 2px;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 900;
+    margin-right: 13px;
+    margin-left: 3px;
+    margin-bottom: 40px;
+}
+
+section.component1 header a.click:first-child {
+    margin-left: 0;
+}
+
+section.component1 header a.click:last-child {
+    margin-right: 0;
+}
+
+section.component1 header a.click:hover {
+    background: #1ABC9C;
+    border: #1ABC9C solid 2px;
+}
+
+/* Radiobutton start */
+
+.container {
+    display: inline-block;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin-right: 7px;
+}
+
+
+.container input {
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    height: 14px;
+    width: 14px;
+    background-color: #FFFFFF;
+    border: 1px #DDDDDD solid;
+    border-radius: 50%;
+}
+  
+.container input:checked ~ .checkmark {
+    background-color: #FFFFFF;
+    border: 1px #DDDDDD solid;
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1ABC9C;
+} 
+
+/* Section two start */
+
+section.component2 {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 5px -5px #707070;
+}
+
+section.component2 div.thefox {
+    display: flex;
+    align-items: center;
+    margin-left: 375px;
+    margin-top: 21px;
+    margin-bottom: 18px;
+}
+
+section.component2 div.thefox img {
+    height: 45px;
+    margin-right: 14px;
+}
+
+section.component2 div.thefox h1 {
+    margin-top: 3px;
+    font-weight: normal;
+    font-size: 35.69px;
+    color: #34495E;
+    line-height: 48px;
+    margin-right: 151px;
+}
+
+section.component2 div.thefox h1 span {
+    font-weight: 900;
+    font-size: 35.69px;
+    color: #2C3E50;
+}
+
+section.component2 div.thefox a {
+    color: #A1B1BC;
+    font-size: 15px;
+    line-height: 19px;
+    margin-right: 46.3px;
+    margin-top: -3px;
+}
+
+section.component2 div.thefox a:last-child {
+    margin-right: 0;
+}
+
+/* Section three */
+
+section.component3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section.component3 div.cons {
+    width: 270px;
+    height: 210px;
+    border: 1px solid #DBE7EF;
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+    margin-top: 126px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+section.component3 div.cons:last-child {
+    margin-right: 0;
+}
+
+section.component3 div.cons h1 {
+    color: #2C3E50;
+    font-size: 18px;
+    line-height: 19px;
+    margin-top: 52px;
+    margin-bottom: 10px;
+}
+
+section.component3 div.cons p {
+    color: #A1B1BC;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 33px;
+}
+
+section.component3 div.cons div.outer {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid #DBE7EF;
+    background: #FFFFFF;
+    position: absolute;
+    top: -31px;
+    left: 105px;
+}
+
+section.component3 div.cons div.inner {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #DBE7EF;
+    background: #FFFFFF;
+    position: absolute;
+    top: -26px;
+    left: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.component3 div.cons div.inner i {
+    color: #A1B1BC;
+    font-size: 20px;
+}
+
+/* Section four */
+
+section.component4 {
+    width: 100%;
+    background: #ECF0F1;
+    padding-top: 89px;
+    padding-left: 374px;
+    padding-bottom: 110px;
+}
+
+section.component4 img {
+    float: right;
+    margin-right: 369px;
+    margin-top: 37px;
+}
+
+section.component4 h1 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 48px;
+    color: #2C3E50;
+    margin-bottom: 13px;
+}
+
+section.component4 p {
+    width: 570px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #A1B1BC;
+    margin-bottom: 32px;
+}
+
+section.component4 a {
+    padding: 15px 39px;
+    font-weight: 900;
+    color: #34495E;
+    font-size: 16px;
+    line-height: 40px;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+}
+
+/* Section five */
+
+section.component5 {
+    width: 100%;
+    background: #2E3241;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 89px;
+    padding-bottom: 116px;
+}
+
+section.component5 p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+section.component5 header {
+    padding: 0 630px;
+    margin-bottom: 56px;
+}
+
+section.component5 header h1 {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+section.component5 div.content {
+    display: flex;
+    justify-content: center;
+}
+
+section.component5 div.content div.percentage {
+    width: 270px;
+    margin-right: 30px;
+}
+
+section.component5 div.content div.percentage > h1 {
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 17px;
+    margin-bottom: 5px;
+}
+
+section.component5 div.content div.percentage > p {
+    padding: 0 4px;
+}
+
+section.component5 div.content div.percentage > .circle1, .circle2, .circle3, .circle4 {
+    color: #4E4E4E;
+}
+
+div.circle1 p {
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: -1px;
+    margin-top: -3px;
+}
+
+div.circle2 p {
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: -1px;
+    margin-top: -3px;
+}
+
+div.circle3 p {
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: -1px;
+    margin-top: -3px;
+}
+
+div.circle4 p {
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: -1px;
+    margin-top: -3px;
+}
+
+section.component5 div.content div.percentage:last-child {
+    margin-right: 0;
+}
+
+section.component5 div.content div.percentage div.circle1 {
+    background: #1ABC9C;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 6px;
+}
+
+section.component5 div.content div.percentage div.circle1 > div {
+    background: #FFFFFF;
+    height: 188px;
+    width: 188px;
+    border-radius: 50%;
+    padding: 42px;
+}
+
+section.component5 div.content div.percentage div.circle1 div > div {
+    background: #ECF0F1;
+    height: 104px;
+    width: 104px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.component5 div.content div.percentage div.circle2 {
+    background: #21C2F8;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 6px;
+}
+
+section.component5 div.content div.percentage div.circle2 p {
+    color: #FFFFFF;
+}
+
+section.component5 div.content div.percentage div.circle2 > div {
+    background: #FFFFFF;
+    height: 188px;
+    width: 188px;
+    border-radius: 50%;
+    padding: 42px;
+}
+
+section.component5 div.content div.percentage div.circle2 div > div {
+    background: #2C3E50;
+    height: 104px;
+    width: 104px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.component5 div.content div.percentage div.circle3 {
+    background: #1ABC9C;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 6px;
+}
+
+section.component5 div.content div.percentage div.circle3 > div {
+    background: #FFFFFF;
+    height: 188px;
+    width: 188px;
+    border-radius: 50%;
+    padding: 42px;
+}
+
+section.component5 div.content div.percentage div.circle3 div > div {
+    background: #ECF0F1;
+    height: 104px;
+    width: 104px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.component5 div.content div.percentage div.circle4 {
+    background: #1ABC9C;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 6px;
+}
+
+section.component5 div.content div.percentage div.circle4 > div {
+    background: #FFFFFF;
+    height: 188px;
+    width: 188px;
+    border-radius: 50%;
+    padding: 42px;
+}
+
+section.component5 div.content div.percentage div.circle4 div > div {
+    background: #ECF0F1;
+    height: 104px;
+    width: 104px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section six */
+
+section.component6 {
+    width: 100%;
+    padding-top: 89px;
+    text-align: center;
+}
+
+section.component6 p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #A1B1BC;
+}
+
+section.component6 header {
+    padding: 0 630px;
+    margin-bottom: 46px;
+}
+
+section.component6 header h1 {
+    font-size: 36px;
+    line-height: 48px;
+    color: #2C3E50;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+section.component6 section.services {
+    display: flex;
+}
+
+section.component6 section.services h1 {
+    color: #2C3E50;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+
+section.component6 section.services p {
+    padding: 0 69px;
+    margin-bottom: 44px;
+}
+
+section.component6 section.services div {
+    border: solid 1px #ECF0F1;
+    border-left: none;
+}
+
+section.component6 section.services div:nth-child(1) {
+    border-left: solid 1px #ECF0F1;
+}
+
+section.component6 section.services div.services1 {
+    padding-top: 46px;
+}
+
+section.component6 section.services div.services2 {
+    padding-top: 43px;
+}
+
+section.component6 section.services div.services3 {
+    padding-top: 46px;
+}
+
+section.component6 section.services div.services4 {
+    padding-top: 48px;
+}
+
+section.component6 section.services div.services1 > img {
+    margin-bottom: 38px;
+}
+
+section.component6 section.services div.services2 > img {
+    margin-bottom: 36px;
+}
+
+section.component6 section.services div.services3 > img {
+    margin-bottom: 38px;
+}
+
+section.component6 section.services div.services4 > img {
+    margin-bottom: 38px;
+}
+
+/* Section seven */
+
+section.component7 {
+    width: 1170px;
+    margin: 0 auto 0;
+    text-align: center;
+    padding-top: 87px;
+}
+
+section.component7 header {
+    margin-bottom: 46px;
+}
+
+section.component7 header h1 {
+    color: #2C3E50;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+section.component7 header p {
+    color: #A1B1BC;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 255px;
+}
+
+section.component7 > div {
+    border-top: solid 1px #ECF0F1;
+    border-bottom: solid 1px #ECF0F1;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 1px;
+}
+
+section.component7 > div a {
+    color: #A1B1BC;
+    font-size: 14px;
+    line-height: 19px;
+    margin-right: 29px;
+    word-spacing: 1px;
+}
+
+section.component7 > div a.sort {
+    float: right;
+    color: #2C3E50;
+    display: block;
+    background: #F7F9F9;
+    border: solid 1px #ECF0F1;
+    padding: 8px 19px 8px 23px;
+    border-radius: 3px;
+    margin-top: -8px;
+    word-spacing: 0px;
+    margin-right: 2px;
+}
+
+/* Grid start */
+
+section.component7 section.grid {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    border-top: solid 1px #ECF0F1;
+    margin-top: 53px;
+    margin-bottom: 100px;
+}
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8 {
+    position: relative;
+}
+
+section.component7 section.grid div {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+section.component7 section.grid div div.hover {
+    background: #FFFFFF;
+    height: 70px;
+    width: 300px;
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    visibility: hidden;
+}
+
+section.component7 section.grid div div.hover img {
+    position: absolute;
+    left: 135px;
+    top: -8px;
+}
+
+section.component7 section.grid div div.hover h1 {
+    color: #2C3E50;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-right: 6px;
+    margin-top: 16px;
+    margin-bottom: -3px;
+}
+
+section.component7 section.grid div div.hover p {
+    color: #A1B1BC;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-right: 6px;
+    text-transform: uppercase;
+}
+
+section.component7 section.grid div:hover {
+    background-color: #2C3E50;
+}
+
+section.component7 section.grid div:hover .hover {
+    visibility: visible;
+}
+
+section.component7 section.grid div.col1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+section.component7 section.grid div.col2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+section.component7 section.grid div.col3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+section.component7 section.grid div.col4 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+section.component7 section.grid div.col5 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+section.component7 section.grid div.col6 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+section.component7 section.grid div.col7 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+section.component7 section.grid div.col8 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.light {
+    background-color: #ECF0F1;
+}
+
+.dark {
+    background-color: #A1B1BC;
+}
+
+/* Section eight */
+
+section.component8 {
+    width: 100%;
+    background: #ECF0F1;
+    text-align: center;
+    padding-top: 88px;
+    padding-bottom: 28px;
+}
+
+section.component8 header {
+    margin-bottom: 65px;
+}
+
+section.component8 header h1 {
+    color: #2C3E50;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+section.component8 header p {
+    color: #A1B1BC;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 630px;
+}
+
+section.component8 div.text {
+    background: #FFFFFF;
+    width: 1170px;
+    margin: 0 auto;
+    border: solid 1px #E7EBEE;
+    font-size: 18px;
+    line-height: 30px;
+    color: #A1B1BC;
+    padding-top: 40px;
+    padding-bottom: 48px;
+    margin-bottom: 30px;
+}
+
+section.component8 div.profile {
+    width: 112px;
+    margin: 0 auto;
+    padding-left: 0.5px;
+}
+
+section.component8 div.profile h1 {
+    font-size: 18px;
+    line-height: 24px;
+    color: #2C3E50;
+    margin-bottom: 1px;
+}
+
+section.component8 div.profile p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #A1B1BC;
+    margin-bottom: 50px;
+}
+
+section.component8 div.profile div {
+    height: 112px;
+    width: 112px;
+    border-radius: 50%;
+    border: #E6EBED 1px solid;
+    background: #FFFFFF;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+section.component8 div.profile div.profilepic {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #A1B1BC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+
+section.component8 div.radiobutton {
+    margin-left: 10px;
+}
+
+/* Section nine */
+
+section.component9 {
+    width: 100%;
+    height: 882px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #666666;
+    position: relative;
+}
+
+section.component9::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(34,37,51) 0%,rgba(34,37,51) 100%);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+section.component9 header {
+    position: relative;
+    z-index: 2;
+    padding-top: 90px;
+    margin-bottom: 42px;
+}
+
+section.component9 header h1 {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+
+section.component9 header p {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+section.component9 section.body {
+    display: flex;
+    justify-content: center;
+}
+
+section.component9 section.body h1 {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 13px;
+}
+
+section.component9 section.body p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+section.component9 section.body > div {
+    z-index: 2;
+}
+
+section.component9 section.body div div > div {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #1FDAB5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+section.component9 section.body > div.left {
+    width: 300px;
+    text-align: right;
+    margin-top: 89px;
+}
+
+section.component9 section.body div.left div div {
+    float: right;
+    margin-top: -13px;
+    margin-left: 15px;
+    margin-bottom: 7px;
+}
+
+section.component9 section.body div.left div p {
+    clear: both;
+}
+
+section.component9 section.body > div.right {
+    width: 300px;
+    text-align: left;
+    margin-top: 89px;
+}
+
+section.component9 section.body div.right div div {
+    float: right;
+    margin-top: -13px;
+    margin-right: 11px;
+    margin-bottom: 7px;
+}
+
+section.component9 section.body div.right div > div {
+    float: left;
+}
+
+section.component9 section.body div.right div > p {
+    clear: both;
+}
+
+section.component9 section.body > div.shape {
+    width: 446px;
+    height: 745px;
+    background: #A1B1BC;
+    border-radius: 30px;
+    margin: 0 62px;
+}
+
+/* Section ten */
+
+section.component10 {
+    width: 1920px;
+    height: 1100px;
+    position: relative;
+    z-index: 3;
+    background: #FFFFFF
+}
