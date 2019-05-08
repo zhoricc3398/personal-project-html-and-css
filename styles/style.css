@@ -542,6 +542,11 @@ section.component6 section.services div {
     border-left: none;
 }
 
+
+section.component6 section.services div:hover {
+    background: #F9FBFB;
+}
+
 section.component6 section.services div:nth-child(1) {
     border-left: solid 1px #ECF0F1;
 }
