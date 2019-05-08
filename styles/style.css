@@ -625,6 +625,10 @@ section.component7 > div a {
     word-spacing: 1px;
 }
 
+section.component7 > div a:hover {
+    color: #1ABC9C;
+}
+
 section.component7 > div a.sort {
     float: right;
     color: #2C3E50;
